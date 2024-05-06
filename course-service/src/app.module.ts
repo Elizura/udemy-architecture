@@ -6,9 +6,7 @@ import { CourseSchema } from './models';
 
 @Module({
   imports: [
-    MongooseModule.forRoot(
-      'mongodb+srv://Cluster15688:ZCijDspYcWmEAuVk@cluster15688.l30kuvi.mongodb.net/udemy',      
-    ),
+    MongooseModule.forRoot('ADD_YOUR_CONNECTION_STRING'),
     MongooseModule.forFeature([
       {
         name: 'Course',
